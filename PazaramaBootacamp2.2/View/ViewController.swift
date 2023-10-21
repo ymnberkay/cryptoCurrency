@@ -30,6 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     private func setupUI() {
         view.addSubview(tableView)
+        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "customCell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -73,12 +74,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        var content = cell.defaultContentConfiguration()
-        content.text = cryptoList[indexPath.row].currency
-        content.secondaryText = cryptoList[indexPath.row].price
-        cell.contentConfiguration = content
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomTableViewCell
+        cell.titleLabel.text = cryptoList[indexPath.row].currency
+        cell.subtitleLabel.text = cryptoList[indexPath.row].price
         return cell
+       
+//        let cell = UITableViewCell()
+//        var content = cell.defaultContentConfiguration()
+//        content.text = cryptoList[indexPath.row].currency
+//        content.secondaryText = cryptoList[indexPath.row].price
+//        cell.contentConfiguration = content
+//        return cell
     }
     
 }

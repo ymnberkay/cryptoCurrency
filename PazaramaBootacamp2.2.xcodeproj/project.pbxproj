@@ -18,6 +18,7 @@
 		CEB82ADE2AE3E5D700670A0F /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB82ADD2AE3E5D700670A0F /* CryptoViewModel.swift */; };
 		CEB82AE52AE3E88800670A0F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CEB82AE42AE3E88800670A0F /* RxCocoa */; };
 		CEB82AED2AE3E88800670A0F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEB82AEC2AE3E88800670A0F /* RxSwift */; };
+		CEFA10C52AE3F99C006D2836 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA10C42AE3F99C006D2836 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CEB82AD82AE3CAA500670A0F /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		CEB82ADB2AE3DEE300670A0F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		CEB82ADD2AE3E5D700670A0F /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		CEFA10C42AE3F99C006D2836 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB82AAE2AE3AE7B00670A0F /* ViewController.swift */,
+				CEFA10C42AE3F99C006D2836 /* CustomTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				CEB82AD92AE3CAA500670A0F /* Crypto.swift in Sources */,
 				CEB82AAF2AE3AE7B00670A0F /* ViewController.swift in Sources */,
 				CEB82AAB2AE3AE7B00670A0F /* AppDelegate.swift in Sources */,
+				CEFA10C52AE3F99C006D2836 /* CustomTableViewCell.swift in Sources */,
 				CEB82ADC2AE3DEE300670A0F /* WebService.swift in Sources */,
 				CEB82AAD2AE3AE7B00670A0F /* SceneDelegate.swift in Sources */,
 				CEB82ADE2AE3E5D700670A0F /* CryptoViewModel.swift in Sources */,
