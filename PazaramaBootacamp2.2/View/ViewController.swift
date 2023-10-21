@@ -23,6 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         tableView.delegate = self
         tableView.dataSource = self
+        self.title = "Crypto currency"
         setupBindings()
         setupUI()
         cryptoVM.requestData()
